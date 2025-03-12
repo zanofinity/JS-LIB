@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+h2{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#granim-header {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+nav {
+    display: none;
+}
+
+.glide {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.glide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.map-container {
+    margin: 20px auto;
+    width: 100%;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+@media (min-width: 768px) {
+    header {
+        height: 200px;
+    }
+
+    .header-content {
+        padding: 20px 30px;
+    }
+
+    nav {
+        display: block;
+    }
+    
+    nav a {
+        font-size: 18px;
+        margin: 0 20px;
+    }
+
+    .glide {
+        width: 80%;
+    }
+
+    .gallery {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 80%;
+    }
+
+    #map {
+        height: 500px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- glide js library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <!-- lightbox2 js library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+    <!-- aos js library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- leaflet js library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- granim js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+</head>
+
+<body>
+
+    <!-- granim -->
+    <header>
+        <div class="header-bg">
+            <canvas id="granim-header"></canvas>
+        </div>
+        <div class="header-content">
+            <h1>Popular Tourist Spots</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Gallery</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- glide -->
+    <section class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide"><img src="assets/images/glide1.jpg" alt="Destination 1"></li>
+                <li class="glide__slide"><img src="assets/images/glide2.jpg" alt="Destination 2"></li>
+                <li class="glide__slide"><img src="assets/images/glide3.jpg" alt="Destination 3"></li>
+            </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">‹</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">›</button>
+        </div>
+    </section>
+
+    <!-- lightbox -->
+    <section class="gallery">
+        <a href="assets/images/gallery1.jpg" data-lightbox="travel"><img src="assets/images/gallery1_thumb.jpg" alt="Thumbnail 1"></a>
+        <a href="assets/images/gallery2.jpg" data-lightbox="travel"><img src="assets/images/gallery2_thumb.jpg" alt="Thumbnail 2"></a>
+        <a href="assets/images/gallery3.jpg" data-lightbox="travel"><img src="assets/images/gallery3_thumb.jpg" alt="Thumbnail 3"></a>
+    </section>
+
+    <!-- leaflet -->
+    <section class="map-container">
+        <h1 data-aos="fade-up">Featured Tourist City</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. <br>It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower.</p>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <h2>Popular Tourist Spots</h2>
+        <p>Copyright © 2023-2025 Erickson Palacay</p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+</html>
